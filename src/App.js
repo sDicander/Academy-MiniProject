@@ -1,4 +1,5 @@
 import './App.css';
+
 import React, {useState} from 'react';
 import { Cookies } from './component/cookies';
 
@@ -13,9 +14,15 @@ function App() {
     localStorage.setItem("accepted cookies", "true");
     setAcceptCookie(true);
   };
+
+import { FetchFilms, FetchPeople} from './FetchInfo';
+
+export function App() {
+
   return (
 
     <div className="App">
+
       <h1 className='hybrid'>Welcome to our hybrid site</h1>
 
       {/* <button onClick={resetLocalStorage}>Clear storage</button> */}
@@ -23,6 +30,10 @@ function App() {
      
      
     
+
+      <FetchFilms />
+      <FetchPeople />
+
     </div>
   );
 }
