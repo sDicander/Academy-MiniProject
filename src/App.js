@@ -3,7 +3,7 @@ import "./App.css";
 import React, { useState } from "react";
 import { Cookies } from "./component/cookies";
 
-import { FetchFilms, FetchPeople } from "./FetchInfo";
+import { FetchFilms, FetchPeople } from "./component/FetchInfo";
 
 function App() {
   const [acceptCookie, setAcceptCookie] = useState(
