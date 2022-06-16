@@ -11,7 +11,6 @@ import "bootstrap/dist/css/bootstrap.css";
 import React, { useState } from "react";
 import { Cookies } from "./component/cookies";
 import { FetchFilms, FetchPeople } from "./component/FetchInfo";
-import { Crypto } from "./component/crypto";
 
 function App() {
   const [acceptCookie, setAcceptCookie] = useState(
@@ -44,10 +43,7 @@ function App() {
       {/* <button onClick={resetLocalStorage}>Clear storage</button> */}
       {acceptCookie ? null : <Cookies acceptCookies={handleAgreeToCookies} />}
 
-      <ul>
-      <Crypto />
-      </ul>
-      
+  
       <FetchFilms />
       <FetchPeople />
     </div>

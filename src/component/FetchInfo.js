@@ -34,7 +34,7 @@ export function FetchPeople() {
 
   const movieItems = data.map(m => <li key={m.uid}>{m.name}</li>);
   if (data.length > 1) {
-    console.log(data);
+    //console.log(data);
   }
 
   return (
