@@ -15,7 +15,7 @@ export function FetchFilms() {
   }
 
   return (
-    <div className="App">
+    <div className="AppFetch">
       <ul>
         {movieItems}
       </ul>
@@ -38,7 +38,7 @@ export function FetchPeople() {
   }
 
   return (
-    <div className="App">
+    <div className="AppFetch">
       <ul>
         {movieItems}
       </ul>
