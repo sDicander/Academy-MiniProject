@@ -1,6 +1,6 @@
 import "./App.css";
 import {
-  Navbar,
+  
   NavDropdown,
   Form,
   FormControl,
@@ -22,10 +22,6 @@ import Species from "./pages/Species";
 import { Route, Routes} from "react-router-dom";
 import Planets from "./pages/Planets";
 import Vehicles from "./pages/Vehicles";
-
-
-import { FetchFilms, FetchPeople } from "./component/FetchInfo";
-import { Crypto } from "./component/crypto";
 
 
 function App() {
@@ -80,9 +76,7 @@ function App() {
       {/* <button onClick={resetLocalStorage}>Clear storage</button> */}
       {acceptCookie ? null : <Cookies acceptCookies={handleAgreeToCookies} />}
 
-      <ul>
-      <Crypto />
-      </ul>
+    
       
       <FetchFilms />
       <FetchPeople />
