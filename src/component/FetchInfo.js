@@ -11,7 +11,7 @@ export function FetchFilms() {
 
   const movieItems = data.map(m => <li key={m._id}>{m.properties.title}</li>);
   if (data.length > 1) {
-    console.log(data);
+    //console.log(data);
   }
 
   return (
