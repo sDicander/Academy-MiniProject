@@ -1,4 +1,8 @@
-import "./App.css";
+
+import './App.css';
+import { Navbar, NavDropdown, Form, FormControl, Button, Nav } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.css';
+
 
 import React, { useState } from "react";
 import { Cookies } from "./component/cookies";
@@ -14,6 +18,7 @@ import { Route, Routes} from "react-router-dom";
 import Planets from "./pages/Planets";
 import Vehicles from "./pages/Vehicles";
 
+
 function App() {
   const [acceptCookie, setAcceptCookie] = useState(
     localStorage.getItem("accepted cookies") === "true"
@@ -25,8 +30,9 @@ function App() {
 
   
   return (
+
     <div className="App">
-      {/* <h1 className="hybrid">Welcome to our hybrid site</h1> */}
+
       <Navbar/>
       <div className="container">
         <Routes>
