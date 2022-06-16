@@ -11,7 +11,7 @@ import Species from "./pages/Species";
 import { Route, Routes} from "react-router-dom";
 import Planets from "./pages/Planets";
 import Vehicles from "./pages/Vehicles";
-import Weather from "./pages/Weather";
+import Cryptos from "./pages/CryptoSearch";
 import Search from "./pages/Search";
 
 function App() {
@@ -36,7 +36,7 @@ function App() {
           <Route path="/species" element={<Species/>}/>
           <Route path="/planets" element={<Planets/>}/>
           <Route path="/vehicles" element={<Vehicles/>}/>
-          <Route path="/Weather" element={<Weather/>}/>
+          <Route path="/cryptos" element={<Cryptos/>}/>
           <Route path="/Search" element={<Search/>}/>
         </Routes>
       </div>

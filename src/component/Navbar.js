@@ -12,7 +12,7 @@ export default function NavBar() {
             <CustomLink to="/Species">Species</CustomLink>
             <CustomLink to="/Starships">Starships</CustomLink>
             <CustomLink to="/Vehicles">Vehicles</CustomLink>
-            <CustomLink to="/Weather">Weather</CustomLink>
+            <CustomLink to="/Cryptos">Crypto</CustomLink>
             <CustomLink to="/Search">Search</CustomLink>
         </ul>
     </nav>
