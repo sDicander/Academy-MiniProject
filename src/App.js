@@ -1,21 +1,32 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { Navbar, NavDropdown, Form, FormControl, Button, Nav } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css';
 
 
+import React, { useState } from "react";
+import { Cookies } from "./component/cookies";
 
-
-
-
+import { FetchFilms, FetchPeople } from "./component/FetchInfo";
 
 
 function App() {
+  const [acceptCookie, setAcceptCookie] = useState(
+    localStorage.getItem("accepted cookies") === "true"
+  );
+  // const resetLocalStorage = () => {
+  //   localStorage.removeItem("accepted cookies");
+  //   setAcceptCookie(false);
+  // };
+  const handleAgreeToCookies = () => {
+    localStorage.setItem("accepted cookies", "true");
+    setAcceptCookie(true);
+  };
+
   return (
-    <div>
 
-
-      <Navbar bg="dark" variant={"dark"} expand="lg">
+    <div className="App">
+       <Navbar bg="dark" variant={"dark"} expand="lg">
         <Navbar.Brand href="#">Welcome to Allt i allo</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         
@@ -33,11 +44,13 @@ function App() {
 
         
       </Navbar>
+      <h1 className="hybrid">Welcome to our hybrid site</h1>
 
+      {/* <button onClick={resetLocalStorage}>Clear storage</button> */}
+      {acceptCookie ? null : <Cookies acceptCookies={handleAgreeToCookies} />}
 
-
-
-
+      <FetchFilms />
+      <FetchPeople />
 
     </div>
   );
