@@ -7,12 +7,11 @@
   position: relative; 
   background-color: rgb(220, 199, 97);
 }
-.fetch{
-  display: flex;
-  flex-direction: row;
-  height:50vh ;
-  text-align: center;
+
+.col {
+  margin-bottom: 15px;
 }
+
 .Cookies {
   box-sizing: border-box;
   width: 100%;
@@ -73,7 +72,20 @@ body {
 .nav li.hover{
   background-color: #7777;
 }
-.home{
-  padding-top: 100%;
-  background-color: rgb(220, 199, 97);
+.cryptoNames li{
+  padding-top:10px ;
+  text-decoration: none;
+  list-style-type: none;
+
+
+}
+
+.search-box{
+  text-decoration: none;
+}
+.enterCrypto{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  text-decoration: none;
 }

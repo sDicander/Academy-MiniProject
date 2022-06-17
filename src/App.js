@@ -13,6 +13,8 @@ import Planets from "./pages/Planets";
 import Vehicles from "./pages/Vehicles";
 import Cryptos from "./pages/CryptoSearch";
 import Searchp from "./pages/Search";
+import GridSystem from "./component/GridSystem";
+
 
 function App() {
   const [acceptCookie, setAcceptCookie] = useState(
