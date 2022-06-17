@@ -4,7 +4,7 @@ export default function NavBar() {
     const path = window.location.pathname;
   return (
     <nav className="nav">
-        <Link to="/" className="site-title">Site Name</Link>
+        <Link to="/" className="site-title">Hybrid</Link>
         <ul>
             <CustomLink to="/Films">Films</CustomLink>
             <CustomLink to="/People">People</CustomLink>
@@ -12,7 +12,7 @@ export default function NavBar() {
             <CustomLink to="/Species">Species</CustomLink>
             <CustomLink to="/Starships">Starships</CustomLink>
             <CustomLink to="/Vehicles">Vehicles</CustomLink>
-            <CustomLink to="/Weather">Weather</CustomLink>
+            <CustomLink to="/Cryptos">Crypto</CustomLink>
             <CustomLink to="/Search">Search</CustomLink>
         </ul>
     </nav>
