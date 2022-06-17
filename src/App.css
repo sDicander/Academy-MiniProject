@@ -72,3 +72,20 @@ body {
 .nav li.hover{
   background-color: #7777;
 }
+.cryptoNames li{
+  padding-top:10px ;
+  text-decoration: none;
+  list-style-type: none;
+
+
+}
+
+.search-box{
+  text-decoration: none;
+}
+.enterCrypto{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  text-decoration: none;
+}
