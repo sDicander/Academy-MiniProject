@@ -10,7 +10,7 @@ export function FetchFilms() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 8000);
+    }, 1000);
   }, []);
 
   useEffect(() => {
@@ -45,7 +45,7 @@ export function FetchPeople() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 8000);
+    }, 2000);
   }, []);
 
   useEffect(() => {
@@ -80,7 +80,7 @@ export function FetchStarships() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 8000);
+    }, 2000);
   }, []);
 
   useEffect(() => {
@@ -115,7 +115,7 @@ export function FetchSpecies() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 8000);
+    }, 2000);
   }, []);
 
   useEffect(() => {
@@ -150,7 +150,7 @@ export function FetchVehicles() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 8000);
+    }, 2000);
   }, []);
 
   useEffect(() => {
@@ -185,7 +185,7 @@ export function FetchPlanets() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 8000);
+    }, 2000);
   }, []);
 
   useEffect(() => {
