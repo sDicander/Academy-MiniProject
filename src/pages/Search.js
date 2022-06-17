@@ -63,7 +63,7 @@ export default function Searchp() {
       <form onSubmit={Handle}>
 
         <select name="typ" id="typ">
-          <option value="namn">Namn</option>
+          <option value="namn">Karaktärer</option>
           <option value="planeter">Planeter</option>
           <option value="filmer">Filmer</option>
           <option value="skepp">Rymdskepp</option>
