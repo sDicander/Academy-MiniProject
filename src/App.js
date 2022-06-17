@@ -12,8 +12,9 @@ import { Route, Routes} from "react-router-dom";
 import Planets from "./pages/Planets";
 import Vehicles from "./pages/Vehicles";
 import Cryptos from "./pages/CryptoSearch";
-import Search from "./pages/Search";
+import Searchp from "./pages/Search";
 import GridSystem from "./component/GridSystem";
+
 
 function App() {
   const [acceptCookie, setAcceptCookie] = useState(
@@ -38,7 +39,7 @@ function App() {
           <Route path="/planets" element={<Planets/>}/>
           <Route path="/vehicles" element={<Vehicles/>}/>
           <Route path="/cryptos" element={<Cryptos/>}/>
-          <Route path="/Search" element={<Search/>}/>
+          <Route path="/Search" element={<Searchp/>}/>
         </Routes>
       </div>
       {acceptCookie ? null : <Cookies acceptCookies={handleAgreeToCookies} />}
