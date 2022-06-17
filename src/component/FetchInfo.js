@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import GridSystem from './GridSystem';
 
 export function FetchFilms() {
   const [data, setData] = useState([]);
@@ -15,10 +16,10 @@ export function FetchFilms() {
   }
 
   return (
-    <div className="Fetch">
-      <ul>
+    <div>
+      <GridSystem colCount={2} md={6}>  
         {movieItems}
-      </ul>
+      </GridSystem>
     </div>
   );
 }
@@ -38,10 +39,10 @@ export function FetchPeople() {
   }
 
   return (
-    <div className="Fetch">
-      <ul>
+    <div>
+      <GridSystem colCount={2} md={6}>  
         {movieItems}
-      </ul>
+      </GridSystem>
     </div>
   );
 }
@@ -61,10 +62,10 @@ export function FetchStarships() {
   }
 
   return (
-    <div className="Fetch">
-      <ul>
+    <div>
+      <GridSystem colCount={2} md={6}>  
         {movieItems}
-      </ul>
+      </GridSystem>
     </div>
   );
 }
@@ -84,10 +85,10 @@ export function FetchSpecies() {
   }
 
   return (
-    <div className="Fetch">
-      <ul>
+    <div>
+      <GridSystem colCount={2} md={6}>  
         {movieItems}
-      </ul>
+      </GridSystem>
     </div>
   );
 }
@@ -107,10 +108,10 @@ export function FetchVehicles() {
   }
 
   return (
-    <div className="Fetch">
-      <ul>
+    <div>
+      <GridSystem colCount={2} md={6}>  
         {movieItems}
-      </ul>
+      </GridSystem>
     </div>
   );
 }
@@ -130,10 +131,10 @@ export function FetchPlanets() {
   }
 
   return (
-    <div className="fetch">
-      <ul>
+    <div>
+      <GridSystem colCount={2} md={6}>  
         {movieItems}
-      </ul>
+      </GridSystem>
     </div>
   );
 }

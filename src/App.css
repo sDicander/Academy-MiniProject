@@ -7,13 +7,10 @@
   position: relative; 
   background-color: white;
 }
-.fetch{
-  display: flex;
-  flex-direction: row;
-  height:50vh ;
-  text-align: center;
-  background-color: wheat;
+.col {
+  margin-bottom: 15px;
 }
+
 .Cookies {
   box-sizing: border-box;
   width: 100%;

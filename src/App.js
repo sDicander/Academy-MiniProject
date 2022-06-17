@@ -13,6 +13,7 @@ import Planets from "./pages/Planets";
 import Vehicles from "./pages/Vehicles";
 import Weather from "./pages/Weather";
 import Search from "./pages/Search";
+import GridSystem from "./component/GridSystem";
 
 function App() {
   const [acceptCookie, setAcceptCookie] = useState(
